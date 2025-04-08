@@ -26,7 +26,7 @@ def fetch_price():
     return {"date": str(datetime.date.today()), "price": "₹178/kg", "trend": "Stable", "summary": "No major changes in global market."}
 
 def post_to_telegram(data):
-    message = f"🟢 *Rubber Price Update ({data['date']})*
+    message = f"🟢 *Rubber Price Update ({data['date']})*"
 
 "               f"• Price: {data['price']}
 "               f"• Trend: {data['trend']}
